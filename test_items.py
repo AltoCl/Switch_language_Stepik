@@ -10,7 +10,7 @@ class BasePage():
     def open(self):
         self.browser.get(self.url)
 
-def test_switch_languag(browser):
+def test_switch_language_and_search_button(browser):
    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/" 
    page = BasePage(browser, link)   # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес 
    page.open()                      # открываем страницу
